@@ -1,68 +1,85 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport">
- 	<title>AZS Dzienne gierki</title>
-	<script src="funcs.js"></script>
-	<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport">
+    <title>AZS Dzienne gierki</title>
+    <script src="funcs.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body bgcolor=#282A36>
-<h1 class="title">AZS Dzienne gierki</h1>
-<div class="row">
-	<div class="column">
-		<h2 class="subtitle">Gry słowne</h2>
-	<button class="game-button"
-		value="https://contexto.me/en/"
-		onclick="open_website(this.value)">Contexto
-	</button>
-	<button class="game-button"
-		value="https://www.nytimes.com/games/wordle/index.html"
-		onclick="open_website(this.value)">Wordle
-	</button>
-	</div>
-	<div class="column">
-		<h2 class="subtitle">Gry geograficzne</h2>
-		<button class="game-button"
-			value="https://globle-game.com/game"
-			onclick="open_website(this.value)">Globle
-		</button>
-		<button class="game-button"
-			value="https://worldle.teuteuf.fr/"
-			onclick="open_website(this.value)">Worldle
-		</button>
-		<button class="game-button"
-			value="https://flagle-game.com/daily"
-			onclick="open_website(this.value)">Flagle
-		</button>
-		<button class="game-button"
-			value="https://travle.earth/"
-			onclick="open_website(this.value)">Travle
-		</button>
-	</div>
-</div>
-<br>
-<div class="row">
 
-	<div class="column">
-		<h2 class="subtitle">Gry liczbowe</h2>
-		<button class="game-button"
-			value="https://angle.wtf"
-			onclick="open_website(this.value)">Angle
-		</button>
-	</div>
-	<div class="column">
-		<h2 class="subtitle">Inne gry</h2>
-		<button class="game-button"
-			value="https://solitaired.com/?game-of-the-day=true"
-			onclick="open_website(this.value)">Pasjans
-		</button>
-		<button class="game-button"
-			value="https://dailyfactorfiction.com/"
-			onclick="open_website(this.value)">Fact or Fiction
-		</button>
-	</div>
-</div>
+    <div class="title-wrapper">
+        <button class="info-button" id="infoBtn">❓</button>
+        <div class="title">
+            <div>AZS Dzienne gierki</div>
+            <div class="countdown" id="countdown-0">00:00:00</div>
+        </div>
+    </div>
+    <div class="info-box" id="infoBox">
+        Licznik odlicza czas do północy.<br>
+        Przyciski przenoszą do zewnętrzych stron.
+    </div>
+    <script>
+    updateCountdown(0, "countdown-0");
+    </script>
+    <div class="row">
+        <div class="column">
+            <h2 class="subtitle">Gry słowne</h2>
+            <button class="button-0"
+                value="https://contexto.me/en/"
+                onclick="open_website(this.value)">Contexto
+            </button>
+            <button class="button-0"
+                value="https://cemantle.certitudes.org/"
+                onclick="open_website(this.value)">Cemantle
+            </button>
+            <button class="button-0"
+                value="https://www.nytimes.com/games/wordle/index.html"
+                onclick="open_website(this.value)">Wordle
+            </button>
+        </div>
+        <div class="column">
+            <h2 class="subtitle">Gry geograficzne</h2>
+            <button class="button-0"
+                value="https://globle-game.com/game"
+                onclick="open_website(this.value)">Globle
+            </button>
+            <button class="button-0"
+                value="https://worldle.teuteuf.fr/"
+                onclick="open_website(this.value)">Worldle
+            </button>
+            <button class="button-0"
+                value="https://flagle-game.com/daily"
+                onclick="open_website(this.value)">Flagle
+            </button>
+            <button class="button-0"
+                value="https://travle.earth/"
+                onclick="open_website(this.value)">Travle
+            </button>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="column">
+            <h2 class="subtitle">Gry liczbowe</h2>
+            <button class="button-0"
+                value="https://angle.wtf"
+                onclick="open_website(this.value)">Angle
+            </button>
+        </div>
+        <div class="column">
+            <h2 class="subtitle">Inne gry</h2>
+            <button class="button-0"
+                value="https://solitaired.com/?game-of-the-day=true"
+                onclick="open_website(this.value)">Pasjans
+            </button>
+            <button class="button-0"
+                value="https://dailyfactorfiction.com/"
+                onclick="open_website(this.value)">Fact or Fiction
+            </button>
+        </div>
+    </div>
 </body>
 </html>
