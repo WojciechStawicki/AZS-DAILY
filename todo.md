@@ -3,9 +3,18 @@
 Literalnie - wordle, ale po polsku
 Fact or fiction - czy jest to fakt, a może fikcja
 GeoGrid - znajdź 9 krajów pasujących
-Gamedle - zgadnij grę na podstawie okładki (lub później słów)
+
+
+nowa kategoria: o grach
+- loldle
+- gamedle
+- genshindle
+
+cemantle - inne contexto
 
 # TODO FEATURES
-stoper na górze ile do północy
+stoper na górze ile do odświeżenia
+inny kolor jeżeli nie otwarte po odświeżeniu
+
 
 ## strony do dodania: 
